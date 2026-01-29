@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux des Transports Paris & Île-de-France</title>
+    <link rel="stylesheet" href="css/metro-style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>🚇 ParisFlow</h1>
+            <p class="tagline">Visualisation des flux de transports</p>
+        </div>
+
+        <!-- Stats en temps réel -->
+        <div class="stats-panel">
+            <div class="stat-item">
+                <span class="stat-value" id="current-passengers">0</span>
+                <span class="stat-label">voyageurs/heure</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="active-lines">19</span>
+                <span class="stat-label">lignes actives</span>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-section">
+            <h3>⏰ Heure de la journée</h3>
+            <div class="timeline-container">
+                <input type="range" id="time-slider" min="5" max="24" value="8" step="1">
+                <div class="time-display">
+                    <span id="current-time">08:00</span>
+                </div>
+                <div class="time-labels">
+                    <span>5h</span>
+                    <span>12h</span>
+                    <span>18h</span>
+                    <span>24h</span>
+                </div>
+            </div>
+            <button id="play-btn" class="play-button">
+                <span id="play-icon">▶</span> Animation
+            </button>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filters-section">
+            <h3>🎛️ Filtres</h3>
+            
+            <div class="filter-group">
+                <label>Type de transport</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="filter-metro" checked>
+                        <span class="checkmark metro"></span>
+                        Métro
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="filter-rer" checked>
+                        <span class="checkmark rer"></span>
+                        RER
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Lignes de métro</label>
+                <div id="metro-lines-filter" class="lines-grid"></div>
+            </div>
+
+            <div class="filter-group">
+                <label>Lignes RER</label>
+                <div id="rer-lines-filter" class="lines-grid"></div>
+            </div>
+        </div>
+
+        <!-- Légende -->
+        <div class="legend-section">
+            <h3>📊 Légende flux</h3>
+            <div class="flux-legend">
+                <div class="flux-item">
+                    <div class="flux-indicator low"></div>
+                    <span>Faible</span>
+                </div>
+                <div class="flux-item">
+                    <div class="flux-indicator medium"></div>
+                    <span>Moyen</span>
+                </div>
+                <div class="flux-item">
+                    <div class="flux-indicator high"></div>
+                    <span>Élevé</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infos -->
+        <div class="info-section">
+            <h3>ℹ️ À propos</h3>
+            <p>Visualisation interactive des flux de voyageurs sur le réseau de transports en commun parisien.</p>
+            <p class="data-source">Sources: RATP, SNCF Transilien, Île-de-France Mobilités</p>
+        </div>
+    </aside>
+
+    <!-- Map Container -->
+    <main class="map-container">
+        <div id="map"></div>
+        
+        <!-- Tooltip -->
+        <div id="tooltip" class="tooltip"></div>
+        
+        <!-- Station info panel -->
+        <div id="station-panel" class="station-panel hidden">
+            <button class="close-btn" id="close-panel">×</button>
+            <h3 id="station-name">Station</h3>
+            <div id="station-lines" class="station-lines"></div>
+            <div class="station-stats">
+                <div class="station-stat">
+                    <span class="stat-number" id="station-passengers">0</span>
+                    <span class="stat-text">voyageurs/jour</span>
+                </div>
+                <div class="station-stat">
+                    <span class="stat-number" id="station-connections">0</span>
+                    <span class="stat-text">correspondances</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="map-controls">
+            <button id="zoom-in" class="control-btn">+</button>
+            <button id="zoom-out" class="control-btn">−</button>
+            <button id="zoom-reset" class="control-btn">⟲</button>
+        </div>
+
+        <!-- Mini stats bar -->
+        <div class="bottom-stats">
+            <div class="mini-stat">
+                <span class="mini-value">303</span>
+                <span class="mini-label">stations</span>
+            </div>
+            <div class="mini-stat">
+                <span class="mini-value">225 km</span>
+                <span class="mini-label">de lignes</span>
+            </div>
+            <div class="mini-stat">
+                <span class="mini-value" id="daily-total">12M</span>
+                <span class="mini-label">voyageurs/jour</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/metro-map.js"></script>
+    <script src="js/metro-animation.js"></script>
+</body>
+</html>

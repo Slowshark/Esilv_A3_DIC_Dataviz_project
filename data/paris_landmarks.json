@@ -1,0 +1,199 @@
+{
+  "monuments": [
+    {
+      "name": "Tour Eiffel",
+      "icon": "🗼",
+      "coord": [2.2945, 48.8584],
+      "type": "monument",
+      "description": "324m - Symbole de Paris"
+    },
+    {
+      "name": "Arc de Triomphe",
+      "icon": "🏛️",
+      "coord": [2.2950, 48.8738],
+      "type": "monument",
+      "description": "Place Charles de Gaulle"
+    },
+    {
+      "name": "Notre-Dame",
+      "icon": "⛪",
+      "coord": [2.3499, 48.8530],
+      "type": "monument",
+      "description": "Cathédrale gothique - Île de la Cité"
+    },
+    {
+      "name": "Sacré-Cœur",
+      "icon": "⛪",
+      "coord": [2.3431, 48.8867],
+      "type": "monument",
+      "description": "Basilique - Montmartre"
+    },
+    {
+      "name": "Louvre",
+      "icon": "🏛️",
+      "coord": [2.3376, 48.8606],
+      "type": "museum",
+      "description": "Plus grand musée du monde"
+    },
+    {
+      "name": "Musée d'Orsay",
+      "icon": "🎨",
+      "coord": [2.3265, 48.8600],
+      "type": "museum",
+      "description": "Art impressionniste"
+    },
+    {
+      "name": "Panthéon",
+      "icon": "🏛️",
+      "coord": [2.3462, 48.8462],
+      "type": "monument",
+      "description": "Quartier Latin"
+    },
+    {
+      "name": "Opéra Garnier",
+      "icon": "🎭",
+      "coord": [2.3316, 48.8720],
+      "type": "culture",
+      "description": "Palais Garnier - 9e arr."
+    },
+    {
+      "name": "Centre Pompidou",
+      "icon": "🎨",
+      "coord": [2.3522, 48.8606],
+      "type": "museum",
+      "description": "Art moderne - Beaubourg"
+    },
+    {
+      "name": "Invalides",
+      "icon": "🏛️",
+      "coord": [2.3125, 48.8567],
+      "type": "monument",
+      "description": "Tombeau de Napoléon"
+    },
+    {
+      "name": "Place de la Concorde",
+      "icon": "🗿",
+      "coord": [2.3214, 48.8656],
+      "type": "place",
+      "description": "Obélisque de Louxor"
+    },
+    {
+      "name": "Jardin du Luxembourg",
+      "icon": "🌳",
+      "coord": [2.3371, 48.8462],
+      "type": "park",
+      "description": "Sénat - 6e arr."
+    },
+    {
+      "name": "Place des Vosges",
+      "icon": "🏰",
+      "coord": [2.3656, 48.8555],
+      "type": "place",
+      "description": "Plus ancienne place de Paris"
+    },
+    {
+      "name": "Trocadéro",
+      "icon": "🎪",
+      "coord": [2.2873, 48.8630],
+      "type": "place",
+      "description": "Vue sur la Tour Eiffel"
+    },
+    {
+      "name": "Place de la Bastille",
+      "icon": "🗽",
+      "coord": [2.3692, 48.8531],
+      "type": "place",
+      "description": "Colonne de Juillet"
+    },
+    {
+      "name": "Place de la République",
+      "icon": "🗽",
+      "coord": [2.3633, 48.8675],
+      "type": "place",
+      "description": "Statue de Marianne"
+    },
+    {
+      "name": "Moulin Rouge",
+      "icon": "🎪",
+      "coord": [2.3323, 48.8841],
+      "type": "culture",
+      "description": "Cabaret - Pigalle"
+    },
+    {
+      "name": "Père Lachaise",
+      "icon": "⚱️",
+      "coord": [2.3933, 48.8614],
+      "type": "cemetery",
+      "description": "Plus grand cimetière de Paris"
+    },
+    {
+      "name": "Champs-Élysées",
+      "icon": "🛍️",
+      "coord": [2.3080, 48.8698],
+      "type": "avenue",
+      "description": "Plus belle avenue du monde"
+    },
+    {
+      "name": "BNF",
+      "icon": "📚",
+      "coord": [2.3756, 48.8330],
+      "type": "culture",
+      "description": "Bibliothèque nationale - 13e"
+    }
+  ],
+  "seine": {
+    "name": "La Seine",
+    "type": "river",
+    "path": [
+      [2.2300, 48.8420],
+      [2.2450, 48.8460],
+      [2.2600, 48.8490],
+      [2.2750, 48.8540],
+      [2.2900, 48.8570],
+      [2.3050, 48.8590],
+      [2.3150, 48.8600],
+      [2.3250, 48.8605],
+      [2.3350, 48.8590],
+      [2.3450, 48.8570],
+      [2.3500, 48.8555],
+      [2.3550, 48.8530],
+      [2.3650, 48.8490],
+      [2.3750, 48.8460],
+      [2.3850, 48.8440],
+      [2.3950, 48.8420],
+      [2.4100, 48.8390]
+    ]
+  },
+  "islands": [
+    {
+      "name": "Île de la Cité",
+      "coordinates": [[[2.3420, 48.8560], [2.3500, 48.8570], [2.3550, 48.8540], [2.3520, 48.8510], [2.3450, 48.8510], [2.3400, 48.8530], [2.3420, 48.8560]]]
+    },
+    {
+      "name": "Île Saint-Louis",
+      "coordinates": [[[2.3550, 48.8530], [2.3620, 48.8545], [2.3650, 48.8520], [2.3620, 48.8495], [2.3560, 48.8505], [2.3550, 48.8530]]]
+    }
+  ],
+  "bois": [
+    {
+      "name": "Bois de Boulogne",
+      "coordinates": [[[2.2200, 48.8550], [2.2350, 48.8700], [2.2600, 48.8750], [2.2650, 48.8650], [2.2550, 48.8450], [2.2350, 48.8400], [2.2200, 48.8550]]]
+    },
+    {
+      "name": "Bois de Vincennes",
+      "coordinates": [[[2.4100, 48.8350], [2.4300, 48.8500], [2.4700, 48.8450], [2.4700, 48.8200], [2.4400, 48.8100], [2.4100, 48.8200], [2.4100, 48.8350]]]
+    }
+  ],
+  "periph": {
+    "name": "Périphérique",
+    "type": "highway",
+    "path": [
+      [2.2800, 48.8250], [2.2550, 48.8350], [2.2400, 48.8500], [2.2350, 48.8600],
+      [2.2400, 48.8700], [2.2550, 48.8800], [2.2750, 48.8870], [2.3000, 48.8930],
+      [2.3250, 48.8970], [2.3500, 48.8980], [2.3750, 48.8950], [2.4000, 48.8900],
+      [2.4150, 48.8800], [2.4200, 48.8650], [2.4200, 48.8500], [2.4150, 48.8350],
+      [2.4000, 48.8200], [2.3750, 48.8100], [2.3500, 48.8080], [2.3250, 48.8100],
+      [2.3000, 48.8150], [2.2800, 48.8250]
+    ]
+  }
+}
