@@ -2,7 +2,7 @@
 
 > **Projet de Data Visualization - ESILV A3 - 2025/2026**
 
-[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-blue)](https://votre-username.github.io/parisflow/)
+[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-blue)](https://slowshark.github.io/parisflow/)
 [![D3.js](https://img.shields.io/badge/Made%20with-D3.js%20v7-orange)](https://d3js.org/)
 
 ## 📋 Description
