@@ -125,4 +125,4 @@ Ce projet est réalisé dans un cadre académique.
 
 ---
 
-*Réalisé avec ❤️ et D3.js*
+*Réalisé en Vibecoding et D3.js*
